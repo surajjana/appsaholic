@@ -7,10 +7,7 @@ var request = require('request');
 var fs = require('fs');
 var app = express();
 
-var Session = Appsaholic.Session;
-var User = Appsaholic.User;
-var session = new Session('23685400c3735bc4ea3dd23fd2f2e139951a50c6', 'a2862fa5eef622b06d2dad1433da936516ec13a3', 'e8d90954-8ce7-498e-96f3-cac57f54e524');
-var user = new User(session);
+
 
 var tweets_res = '';
 
@@ -73,6 +70,12 @@ app.get('/sentiment/:msg', function (req, res){
 
 
 app.get('/try_perk', function (req, res){
+
+	var Session = Appsaholic.Session;
+	var User = Appsaholic.User;
+	var session = new Session('23685400c3735bc4ea3dd23fd2f2e139951a50c6', 'a2862fa5eef622b06d2dad1433da936516ec13a3', 'e8d90954-8ce7-498e-96f3-cac57f54e524');
+	var user = new User(session);
+	
 	user.getInformation().then(function(user) {
 		console.log("ID: %s", user.id);
 		console.log("Email: %s", user.email);
