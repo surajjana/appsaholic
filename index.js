@@ -85,6 +85,7 @@ app.get('/try_perk', function (req, res){
 		console.log("Name: %s", error.name);
 		console.log("Reason: %s", error.message);
 		console.log("Code: %s", error.code);
+		console.log(error);
 	});
 	res.send("Trying perk!!");
 });
