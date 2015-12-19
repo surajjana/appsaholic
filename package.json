@@ -10,6 +10,7 @@
     "mongoose": "4.1.3",
     "twit": ">1.0.0",
     "twitter": ">1.0.0",
+    "appsaholic-sdk": "latest",
     "request": "latest",
     "fs": "latest",
     "body-parser": "1.13.3",
