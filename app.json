@@ -1,0 +1,8 @@
+{
+  "name": "APIHACKDAY TEST",
+  "description": "Juat a test... :-p",
+  "repository": "https://github.com/surajjana/apihackday-test",
+  "logo": "http://node-js-sample.herokuapp.com/node.svg",
+  "keywords": ["node", "express", "static"],
+  "image": "heroku/node"
+}
