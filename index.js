@@ -7,6 +7,7 @@ var request = require('request');
 var fs = require('fs');
 var app = express();
 
+var Session = Appsaholic.Session;
 var User = Appsaholic.User;
 var session = new Session('23685400c3735bc4ea3dd23fd2f2e139951a50c6', 'a2862fa5eef622b06d2dad1433da936516ec13a3', 'e62ed26b-3a1d-4325-a2d1-9df5efc6f20a');
 var user = new User(session);
